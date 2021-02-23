@@ -1,0 +1,242 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  font-family: sans-serif;
+}
+/*-------------------Filtro----------------*/
+.filtro{
+  display: flex;
+  width: 250px;
+  margin: 25px 0px;
+}
+.filtro ul{
+  width: 100%;
+  height: inherit;
+}
+.filtro li{
+  height: 40px;
+  background-color: #f0ece3;
+  border-bottom: 1px solid #c9c4c4;
+  list-style: none;
+}
+#lista label:nth-child(even) li{
+  background-color: #E2DDD3;
+}
+#lista label:last-child li{
+  border-radius: 0 0 0.5rem 0.5rem;
+}
+.filtro h3{
+  height: 30px;
+  background-color: #c7b198;
+  border-bottom: 1px solid #a0968a;
+  padding: 13px 0px 0px 0px;
+  text-align: center;
+  user-select: none;
+  cursor: pointer;
+}
+.filtro h3 input{
+  position:
+}
+.filtro ul li{
+  padding: 20px 0px 0px 0px;
+  cursor: pointer;
+}
+.checkmark{
+  padding-left: 10px;
+}
+.filtro ul li input{
+  margin-left: 10px;
+}
+.filtro ul li span{
+  user-select: none;
+  transition: 0.3s;
+}
+.filtro ul li:hover span{
+  margin-left: 10px;
+}
+/*----------------Mostrador de productos--------------*/
+.container{
+  display: flex;
+  width: 1500px;
+  height: 100%;
+  margin: auto;
+}
+.container_productos{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width:100%;
+  height: auto;
+  margin: 15px auto;
+}
+.panel{
+  width: 400px;
+  height: 400px;
+  background-color: #fbf7f0;
+  border: 1px solid #C8C7C6;
+  border-radius: 0 0 0.5rem 0.5rem;
+  margin: 10px auto;
+  transition: 0.3s;
+  position: relative;
+}
+.panel:hover{
+-webkit-box-shadow: 0px 2px 10px 2px #00000028;
+-moz-box-shadow: 0px 2px 10px 2px #00000028;
+box-shadow: 0px 2px 10px 2px #00000028;
+}
+.panel img{
+
+}
+.panel:hover img{
+  height: 65%;
+}
+.container_productos a{
+  text-decoration: none;
+}
+/*-----------------Interior paneles----------------------*/
+.panel article{
+  margin: 10px;
+}
+.nombre_producto{
+  color:  #2f2f2f;
+  height: 35px;
+}
+.precio{
+  margin: 10px 0px;
+  font-size: 30px;
+  font-weight: 400;
+  color: green;
+  text-align: center;
+  font-family: Courier New;
+}
+.panel img{
+  width: 100%;
+  height: 60%;
+  object-fit: cover;
+  transition: 0.3s;
+}
+.hay_stock{
+  margin-top:25px;
+  margin-right:10px;
+  font-size: 15px;
+  color: #65a74f;
+  letter-spacing: -0.7pt;
+  font-family: Lucida Console;
+  text-align: right;
+  position: absolute;
+  bottom: 20px;
+  right: 10px;
+}
+.sin_stock{
+  margin-top:25px;
+  margin-right:10px;
+  font-size: 15px;
+  color: #b12d25;
+  letter-spacing: -0.7pt;
+  font-family: Lucida Console;
+  text-align: right;
+  position: absolute;
+  bottom: 20px;
+  right: 10px;
+}
+/*----------------Panel de relleno asqueroso que hice UwU-----------------*/
+.panel_de_relleno{
+  width: 400px;
+  height: 1px;
+  margin: 10px auto;
+}
+/*--------------responsive-------------------*/
+
+@media (max-width: 1520px )
+{
+  .container{
+    width: 85%;
+  }
+  .panel{
+    width: 45%;
+  }
+  .panel_de_relleno{
+    width: 45%;
+  }
+  #abridorFiltro{
+    cursor: default;
+  }
+}
+@media (max-width: 1240px ){
+  .container{
+    width: 90%;
+  }
+  .panel{
+    width: 45%;
+    height: 450px;
+  }
+  .panel img{
+  }
+  .panel_de_relleno{
+    width: 45%;
+    height: 45%;
+  }
+  #abridorFiltro{
+    cursor: default;
+  }
+}
+@media (max-width: 1000px){
+  .container{
+    width: 90%;
+  }
+  .panel{
+    width: 45%;
+    height: 400px;
+  }
+  .panel_de_relleno{
+    width: 45%;
+    height: 45%;
+  }
+  .container{
+    display: block;
+  }
+  .filtro{
+    width: 100%;
+  }
+  .lista_oculta{
+    display: none;
+  }
+  .lista_visible{
+    display: block;
+  }
+  #abridorFiltro{
+    cursor: pointer;
+  }
+}
+
+/*--------------Paginacion---------------*/
+
+.nav_paginacion{
+  width: 100%;
+  text-align: center;
+
+}
+.paginacion{
+  list-style: none;
+  display: block;
+  margin: auto;
+  
+}
+.paginacion li{
+  display: inline-block;
+}
+.paginacion li a{
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  padding: 7px 12px;
+  font-size: 17px;
+  transition: 0.2s;
+}
+.paginacion li a:hover , .active{
+  background-color: #D3C3AD;
+}
+.disable a{
+  pointer-events: none;
+  color: gray!important;
+}

@@ -1,0 +1,45 @@
+.dsply_n{
+	display: none;
+}
+.navbar_b-r{
+  border-radius:0px 0px 20px 20px;
+}
+.mouse_c-p{
+	cursor: pointer;
+}
+.v-h{
+	visibility: hidden;
+}
+.u-s_none{
+	user-select: none;
+}
+.b{
+	border: 1px solid;
+}
+.bg_purpura{
+	background: purple;
+}
+.cuadradito-50{
+	width: 50px;
+	height: 50px;
+}
+.cuadradito-100{
+	width: 100px;
+	height: 100px;
+}
+.cuadradito-500{
+	width: 500px;
+	height: 500px;
+}
+.text_left{
+	text-align: left;
+}
+.bold{
+	font-weight: bold;
+}
+.text_center{
+	text-align: center;	
+}
+.dsply_ib{
+	display: inline-block;
+}

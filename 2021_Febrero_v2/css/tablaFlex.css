@@ -1,0 +1,103 @@
+/* Table Settings */
+.flex-table {
+  margin: 20px;
+}
+.flex-table .grid {
+  max-width: 1000px;
+}
+.flex-table .button--small {
+  color: #206AB0;
+}
+.flex-table .button--full {
+  color: #000;
+  background-color: #206AB0;
+  border-color: #206AB0;
+}
+.flex-table .grid__row--highlight .button--small {
+  color: #FF671E;
+}
+.flex-table .grid__row--highlight .button--full {
+  background-color: #FF671E;
+}
+
+/* General Styles */
+.flex-table .grid {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
+  text-align: left;
+  background-color: #000;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+  font-family: sans-serif;
+}
+.flex-table .grid__row .grid__wrapper, .flex-table .grid__header .grid__wrapper {
+  display: flex;
+  display: -webkit-flex;
+  padding-left: 10px;
+  height: 100%;
+  text-align: center;
+}
+.flex-table .grid__row {
+  padding-left: 15px;
+  height: 60px;
+}
+.flex-table .grid__row--header {
+  background-color: #A2A2A2 !important;
+}
+.flex-table .grid__row--header .grid__item {
+  color: #000;
+  font-size: 16px;
+  margin: auto;
+}
+.flex-table .grid__row:nth-child(odd) {
+  background-color: #fff;
+}
+.flex-table .grid__row--highlight {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  background: #000;
+  margin-left: -5px;
+  z-index: 1000;
+  padding: 5px 5px 5px 20px;
+  margin-right: -5px;
+}
+.flex-table .grid__item {
+  font-weight: 200;
+  margin: auto;
+  line-height: 1.2;
+  flex: 1;
+}
+
+.flex-table .button--small {
+  display: block;
+  text-align: center;
+  width: 23px;
+  height: 23px;
+  font-size: 26px;
+  padding: 0;
+  margin: 0;
+  margin-top: -7px;
+  text-decoration: none;
+}
+@media only screen and (min-width: 600px) {
+  .flex-table .button--small {
+    display: none;
+  }
+}
+.flex-table .button--full {
+  display: none;
+  text-align: center;
+  width: 125px;
+  height: 35px;
+  border-radius: 2px;
+  font-size: 16px;
+  line-height: 35px;
+  white-space: nowrap;
+  padding: 0;
+  text-decoration: none;
+}
+@media only screen and (min-width: 600px) {
+  .flex-table .button--full {
+    display: block;
+  }
+}

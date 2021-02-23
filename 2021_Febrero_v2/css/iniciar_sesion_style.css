@@ -1,0 +1,88 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+/*----------formulario----------*/
+
+.fondo{
+	height: 100%;
+	width: 100%;
+	background-color: white;
+	position: absolute;
+	z-index: -30;
+	background-color: #fbf7f0;
+	border-radius: 0 0 0.5rem 0.5rem;
+}
+.padre-presencial{
+	padding: 20px;
+}
+.formulario{
+	width: 500px;
+	margin: 40px auto;
+	color: rgb(47, 47, 47);
+	border: 1px solid #C8C7C6;
+	border-radius: 0 0 0.5rem 0.5rem;
+	position: relative;
+ }
+.formulario-titulo{
+	text-align: center;
+  margin-bottom: 30px;
+  color: rgb(47, 47, 47);
+  border-bottom: 1px solid #c8c7c6;
+  padding-bottom: 15px;
+}
+.formulario-input,.formulario-submit,.formulario-label{
+	display: block;
+	width: 100%;
+	font-size: 1.3em;
+}
+.formulario-input{
+	padding: 20px;
+	border:1px solid rgba(0,0,0,0.3);
+  	border-radius: 0.2rem;
+	margin-bottom: 40px;
+	background: transparent;
+}
+.formulario-input:focus{
+	border: 1px solid rgba(0,0,0,0.7);
+  	border-radius: 0.2rem;
+}
+.formulario-input:focus + .formulario-label{
+	margin-top: -135px;
+	font-size: 18px;
+}
+.formulario-label{
+	padding-left: 15px;
+	position: absolute;
+	margin-top: -85px;
+	z-index: -20;
+	transition: all 0.2s;
+}
+.formulario-submit{
+	background-color: rgba(0,0,0,0.7);
+	color: rgb(60, 60, 60);
+	padding: 10px 20px;
+	cursor: pointer;
+	border: none;
+  border-radius: 0.2rem;
+  background-color: #c7b198;
+  border: 1px solid #a0968a;
+  transition: 0.2s;
+}
+.formulario-submit:hover{
+  background-color: #B6A38E;
+  border: 1px solid #A49380;
+}
+.fijar{
+	margin-top: -135px;
+}
+@media (max-width: 600px){
+  .probando{
+  	height: 150px;
+  }
+  .formulario{
+    width: 400px;
+  }
+}
